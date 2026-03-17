@@ -11,7 +11,7 @@ public struct FeedbackSheet: View {
     /// タイトル
     @State private var title: String = ""
     /// 詳細
-    @State private var body: String = ""
+    @State private var detail: String = ""
     /// スクリーンショット画像
     @State private var screenshot: UIImage?
     /// PhotosPicker で選択したアイテム
@@ -52,7 +52,7 @@ public struct FeedbackSheet: View {
                         Text("詳細")
                             .font(.caption)
                             .foregroundStyle(.secondary)
-                        TextEditor(text: $body)
+                        TextEditor(text: $detail)
                             .frame(minHeight: 80, maxHeight: 160)
                     }
                 }
@@ -190,7 +190,7 @@ public struct FeedbackSheet: View {
                 let response = try await FeedbackClient.shared.submit(
                     category: selectedCategory,
                     title: title,
-                    body: body,
+                    body: detail,
                     screenshot: screenshot
                 )
 
