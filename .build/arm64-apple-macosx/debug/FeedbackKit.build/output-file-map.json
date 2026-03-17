@@ -1,0 +1,40 @@
+{
+  "": {
+    "swift-dependencies": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/master.swiftdeps"
+  },
+  "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/Sources/FeedbackKit/FeedbackButton.swift": {
+    "dependencies": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/FeedbackButton.d",
+    "object": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/FeedbackButton.swift.o",
+    "swiftmodule": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/FeedbackButton~partial.swiftmodule",
+    "swift-dependencies": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/FeedbackButton.swiftdeps",
+    "diagnostics": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/FeedbackButton.dia"
+  },
+  "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/Sources/FeedbackKit/FeedbackClient.swift": {
+    "dependencies": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/FeedbackClient.d",
+    "object": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/FeedbackClient.swift.o",
+    "swiftmodule": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/FeedbackClient~partial.swiftmodule",
+    "swift-dependencies": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/FeedbackClient.swiftdeps",
+    "diagnostics": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/FeedbackClient.dia"
+  },
+  "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/Sources/FeedbackKit/FeedbackKit.swift": {
+    "dependencies": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/FeedbackKit.d",
+    "object": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/FeedbackKit.swift.o",
+    "swiftmodule": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/FeedbackKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/FeedbackKit.swiftdeps",
+    "diagnostics": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/FeedbackKit.dia"
+  },
+  "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/Sources/FeedbackKit/FeedbackSheet.swift": {
+    "dependencies": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/FeedbackSheet.d",
+    "object": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/FeedbackSheet.swift.o",
+    "swiftmodule": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/FeedbackSheet~partial.swiftmodule",
+    "swift-dependencies": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/FeedbackSheet.swiftdeps",
+    "diagnostics": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/FeedbackSheet.dia"
+  },
+  "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/Sources/FeedbackKit/Models.swift": {
+    "dependencies": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/Models.d",
+    "object": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/Models.swift.o",
+    "swiftmodule": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/Models~partial.swiftmodule",
+    "swift-dependencies": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/Models.swiftdeps",
+    "diagnostics": "/Users/daisuketsukada/Documents/dsgarage/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKit.build/Models.dia"
+  }
+}
