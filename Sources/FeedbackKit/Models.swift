@@ -11,6 +11,19 @@ public enum FeedbackCategory: String, CaseIterable, Sendable {
     case question = "質問"
     case other = "その他"
 
+    /// サーバーに送信する ID（英語）
+    public var categoryId: String {
+        switch self {
+        case .bug: return "bug"
+        case .crash: return "crash"
+        case .feature: return "feature"
+        case .ux: return "ux"
+        case .performance: return "performance"
+        case .question: return "question"
+        case .other: return "other"
+        }
+    }
+
     /// SF Symbol アイコン名
     public var icon: String {
         switch self {

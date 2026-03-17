@@ -45,7 +45,7 @@ public actor FeedbackClient {
 
         let request = FeedbackRequest(
             repo: repo,
-            category: category.rawValue,
+            category: category.categoryId,
             title: title,
             body: body,
             screenshot: screenshotBase64,
