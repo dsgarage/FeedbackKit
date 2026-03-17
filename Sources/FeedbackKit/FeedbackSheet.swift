@@ -18,15 +18,12 @@ public struct FeedbackSheet: View {
     @State private var selectedPhotoItem: PhotosPickerItem?
     /// 送信中フラグ
     @State private var isSubmitting = false
-    /// 送信結果
-    @State private var submitResult: SubmitResult?
     /// エラーメッセージ
     @State private var errorMessage: String?
-
-    /// 送信結果の種類
-    private enum SubmitResult {
-        case success(issueURL: String?)
-    }
+    /// 成功アラート表示
+    @State private var showSuccessAlert = false
+    /// 成功時の Issue 番号
+    @State private var successIssueNumber: Int?
 
     public init() {}
 
@@ -108,25 +105,6 @@ public struct FeedbackSheet: View {
                     LabeledContent("ロケール", value: Locale.current.identifier)
                 }
 
-                // 送信結果表示
-                if let result = submitResult {
-                    Section("送信結果") {
-                        switch result {
-                        case .success(let issueURL):
-                            VStack(alignment: .leading, spacing: 8) {
-                                Label("送信完了！", systemImage: "checkmark.circle.fill")
-                                    .foregroundStyle(.green)
-                                    .font(.headline)
-
-                                if let urlString = issueURL, let url = URL(string: urlString) {
-                                    Link("Issue を確認する", destination: url)
-                                        .font(.subheadline)
-                                }
-                            }
-                        }
-                    }
-                }
-
                 // エラー表示
                 if let errorMessage {
                     Section("エラー") {
@@ -159,8 +137,19 @@ public struct FeedbackSheet: View {
                         Button("送信") {
                             submitFeedback()
                         }
-                        .disabled(title.isEmpty || submitResult != nil)
+                        .disabled(title.isEmpty)
                     }
+                }
+            }
+            .alert("送信完了", isPresented: $showSuccessAlert) {
+                Button("OK") {
+                    dismiss()
+                }
+            } message: {
+                if let number = successIssueNumber {
+                    Text("フィードバックを送信しました\nIssue #\(number) として登録されました")
+                } else {
+                    Text("フィードバックを送信しました")
                 }
             }
         }
@@ -195,7 +184,8 @@ public struct FeedbackSheet: View {
                 )
 
                 if response.success {
-                    submitResult = .success(issueURL: response.issue_url)
+                    successIssueNumber = response.issue_number
+                    showSuccessAlert = true
                 } else {
                     errorMessage = response.error ?? "不明なエラーが発生しました"
                 }
